@@ -14,6 +14,9 @@ layout: index
 			{% if s.content != null %}
 			<p>{{s.content}}</p>
 			{% endif %}
+			{% for t in s.content_multi %}
+				<p class="ex" data-type="{{t.type}}">{{t.content}}</p>
+			{% endfor %}
 		</div>
 	</div>
 	{% endfor %}

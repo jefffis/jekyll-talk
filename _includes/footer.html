@@ -10,9 +10,11 @@
 			lastSlide = $('.slide-wrap:last'),
 			slides = $('.slide-wrap');
 
-		setTimeout(function() {
-			firstSlide.addClass('active');
-		}, 500);
+		// setTimeout(function() {
+		// 	firstSlide.addClass('active');
+		// }, 500);
+
+		firstSlide.addClass('active');
 
 		$(document).keydown(function(e) {
 			if((e.keyCode===39)&&(!lastSlide.hasClass('active'))){
@@ -20,13 +22,14 @@
 					next = active.next('.slide-wrap');
 
 				active.removeClass('active');
-				if(next.data('speedy')===null || next.data('speedy')===undefined){
-					setTimeout(function() {
-						next.addClass('active');
-					}, 500);
-				}else{
-					next.addClass('active');
-				}
+				next.addClass('active');
+				// if(next.data('speedy')===null || next.data('speedy')===undefined){
+				// 	setTimeout(function() {
+				// 		next.addClass('active');
+				// 	}, 500);
+				// }else{
+				// 	next.addClass('active');
+				// }
 			}
 		});
 
@@ -37,13 +40,14 @@
 						next = active.next('.slide-wrap');
 
 					active.removeClass('active');
-					if(next.data('speedy')===null || next.data('speedy')===undefined){
-						setTimeout(function() {
-							next.addClass('active');
-						}, 500);
-					}else{
-						next.addClass('active');
-					}
+					next.addClass('active');
+					// if(next.data('speedy')===null || next.data('speedy')===undefined){
+					// 	setTimeout(function() {
+					// 		next.addClass('active');
+					// 	}, 500);
+					// }else{
+					// 	next.addClass('active');
+					// }
 				}
 			});
 		}
@@ -54,13 +58,14 @@
 					prev = active.prev('.slide-wrap');
 
 				active.removeClass('active');
-				if(prev.data('speedy')===null || prev.data('speedy')===undefined){
-					setTimeout(function() {
-						prev.addClass('active');
-					}, 500);
-				}else{
-					prev.addClass('active');
-				}
+				prev.addClass('active');
+				// if(prev.data('speedy')===null || prev.data('speedy')===undefined){
+				// 	setTimeout(function() {
+				// 		prev.addClass('active');
+				// 	}, 500);
+				// }else{
+				// 	prev.addClass('active');
+				// }
 			}
 		});
 
@@ -71,16 +76,33 @@
 						prev = active.prev('.slide-wrap');
 
 					active.removeClass('active');
-					if(prev.data('speedy')===null || prev.data('speedy')===undefined){
-						setTimeout(function() {
-							prev.addClass('active');
-						}, 500);
-					}else{
-						prev.addClass('active');
-					}
+					prev.addClass('active');
+					// if(prev.data('speedy')===null || prev.data('speedy')===undefined){
+					// 	setTimeout(function() {
+					// 		prev.addClass('active');
+					// 	}, 500);
+					// }else{
+					// 	prev.addClass('active');
+					// }
 				}
 			});
 		}
+
+		// go to last
+		$(document).keydown(function(e) {
+			if(e.keyCode===76){
+				slides.removeClass('active');
+				lastSlide.addClass('active');
+			}
+		});
+
+		// go to first
+		$(document).keydown(function(e) {
+			if(e.keyCode===70){
+				slides.removeClass('active');
+				firstSlide.addClass('active');
+			}
+		});
 	});
 	</script>
 	</body>
