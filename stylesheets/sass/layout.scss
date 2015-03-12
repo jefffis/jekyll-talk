@@ -58,10 +58,12 @@ p {
         opacity: 1;
         transform: scale(1);
         transform: translate(0,0);
-        .animate & {
-            -webkit-animation: fadeIn .5s ease-in-out;
-            animation: fadeIn .5s ease-in-out;
-        }
+        -webkit-animation: fadeIn .5s ease-in-out;
+        animation: fadeIn .5s ease-in-out;
+        // .animate & {
+        //     -webkit-animation: fadeIn .5s ease-in-out;
+        //     animation: fadeIn .5s ease-in-out;
+        // }
     }
 }
 .slide {

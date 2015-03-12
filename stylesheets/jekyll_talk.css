@@ -62,10 +62,9 @@ p {
     display: table;
     opacity: 1;
     transform: scale(1);
-    transform: translate(0, 0); }
-    .animate .slide-wrap.active {
-      -webkit-animation: fadeIn .5s ease-in-out;
-      animation: fadeIn .5s ease-in-out; }
+    transform: translate(0, 0);
+    -webkit-animation: fadeIn .5s ease-in-out;
+    animation: fadeIn .5s ease-in-out; }
 
 .slide {
   display: table-cell;
