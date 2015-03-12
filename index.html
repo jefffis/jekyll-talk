@@ -1,0 +1,22 @@
+---
+layout: index
+---
+
+{% include header.html %}
+
+{% for slide in site.posts %}
+	{% for s in slide.slides %}
+	<div class="slide-wrap"{% if s.img != null %} style="background: url({{s.img}}) no-repeat center center; background-size: contain;" data-speedy{% endif %}>
+		<div class="slide">
+			{% if s.title != null %}
+			<h1>{{s.title}}</h1>
+			{% endif %}
+			{% if s.content != null %}
+			<p>{{s.content}}</p>
+			{% endif %}
+		</div>
+	</div>
+	{% endfor %}
+{% endfor %}
+
+{% include footer.html %}

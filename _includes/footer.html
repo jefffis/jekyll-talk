@@ -1,0 +1,87 @@
+	<script src="javascripts/app.js"></script>
+	<script>
+	$(function() {
+
+		if($(window).width()>800){
+			$('html').addClass('animate');
+		}
+
+		var firstSlide = $('.slide-wrap:first'),
+			lastSlide = $('.slide-wrap:last'),
+			slides = $('.slide-wrap');
+
+		setTimeout(function() {
+			firstSlide.addClass('active');
+		}, 500);
+
+		$(document).keydown(function(e) {
+			if((e.keyCode===39)&&(!lastSlide.hasClass('active'))){
+				var active = $('body').find('.slide-wrap.active'),
+					next = active.next('.slide-wrap');
+
+				active.removeClass('active');
+				if(next.data('speedy')===null || next.data('speedy')===undefined){
+					setTimeout(function() {
+						next.addClass('active');
+					}, 500);
+				}else{
+					next.addClass('active');
+				}
+			}
+		});
+
+		if($(window).width()<800){
+			$('body').on('swipeleft', function() {
+				if(!lastSlide.hasClass('active')){
+					var active = $('body').find('.slide-wrap.active'),
+						next = active.next('.slide-wrap');
+
+					active.removeClass('active');
+					if(next.data('speedy')===null || next.data('speedy')===undefined){
+						setTimeout(function() {
+							next.addClass('active');
+						}, 500);
+					}else{
+						next.addClass('active');
+					}
+				}
+			});
+		}
+
+		$(document).keydown(function(e) {
+			if((e.keyCode===37)&&(!firstSlide.hasClass('active'))){
+				var active = $('body').find('.slide-wrap.active'),
+					prev = active.prev('.slide-wrap');
+
+				active.removeClass('active');
+				if(prev.data('speedy')===null || prev.data('speedy')===undefined){
+					setTimeout(function() {
+						prev.addClass('active');
+					}, 500);
+				}else{
+					prev.addClass('active');
+				}
+			}
+		});
+
+		if($(window).width()<800){
+			$('body').on('swiperight', function() {
+				if(!firstSlide.hasClass('active')){
+					var active = $('body').find('.slide-wrap.active'),
+						prev = active.prev('.slide-wrap');
+
+					active.removeClass('active');
+					if(prev.data('speedy')===null || prev.data('speedy')===undefined){
+						setTimeout(function() {
+							prev.addClass('active');
+						}, 500);
+					}else{
+						prev.addClass('active');
+					}
+				}
+			});
+		}
+	});
+	</script>
+	</body>
+</html>
