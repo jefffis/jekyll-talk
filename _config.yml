@@ -1,0 +1,6 @@
+name: jekyll talk by Jefff
+markdown: redcarpet
+highlighter: pygments
+permalink: /:title
+redcarpet:
+    extensions: [with_toc_data]
