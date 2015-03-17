@@ -6,8 +6,8 @@ layout: index
 
 {% for slide in site.posts %}
 	{% for s in slide.slides %}
-	<div class="slide-wrap"{% if s.img != null %} style="background: url({{s.img}}) no-repeat center center; background-size: contain;" data-speedy{% endif %}>
-		<div class="slide">
+	<div class="slide-wrap{% if s.img != null %} no-b{% endif %}">
+		<div class="slide"{% if s.img != null %} style="background: transparent url({{s.img}}) no-repeat center center; background-size: auto;" data-speedy{% endif %}>
 			{% if s.title != null %}
 			<h1{% if s.first == true %} class="first"{% endif %}>{{s.title}}</h1>
 			{% endif %}

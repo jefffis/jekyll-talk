@@ -24,29 +24,37 @@
   padding: 0; }
 
 html, body {
-  background: #040407;
-  color: yellow;
+  background: #DE0434;
+  color: #040407;
   font: normal 120%/1.5 "Helvetica Neue", sans-serif;
   height: 100%;
   min-height: 100%;
+  padding: 1rem;
   width: 100%; }
 
+body {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+  padding: 0; }
+
 h1 {
-  font-size: 3.5rem;
-  font-weight: normal;
+  font-size: 4rem;
+  letter-spacing: -2.5px;
   line-height: 1.1;
   margin: 0; }
   h1 + p {
     margin-top: 1rem; }
   h1.first {
-    font-size: 5rem; }
+    font-size: 5rem;
+    letter-spacing: -2px; }
 
 p {
-  color: white;
+  color: #999;
   margin: 0; }
   p.ex:after {
     content: attr(data-type);
-    color: yellow;
+    color: #040407;
     font-weight: bold;
     display: inline-block;
     margin-left: .25rem;
@@ -55,6 +63,7 @@ p {
 .slide-wrap {
   display: none;
   height: 100%;
+  padding: 0 1rem;
   opacity: 0;
   transform: scale(0.75);
   transform: translate(-5%, -5%);
@@ -71,15 +80,22 @@ p {
 .slide {
   display: table-cell;
   height: 100%;
-  padding: 1rem;
   text-align: center;
   vertical-align: middle;
   width: 100%; }
+  .no-b .slide {
+    background: none;
+    box-shadow: none; }
 
 .slide * {
   margin-left: auto;
   margin-right: auto;
   max-width: 45rem; }
+
+a {
+  border-bottom: 2px solid currentColor;
+  color: #DE0434;
+  text-decoration: none; }
 
 @media screen and (max-width: 30rem) {
   h1 {
