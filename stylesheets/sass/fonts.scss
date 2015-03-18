@@ -1,4 +1,4 @@
-@font-face{font-family:'proxima-nova-semi';src:url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.eot");src:url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.eot?#iefix") format("embedded-opentype"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.woff2") format("woff2"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.woff") format("woff"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.ttf") format("truetype"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.svg#proxima-nova-semi") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'proxima-nova-regular';src:url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.eot");src:url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.eot?#iefix") format("embedded-opentype"),url("/css/fonts/proxima-nova/regular/webfont.woff2") format("woff2"),url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.woff") format("woff"),url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.ttf") format("truetype"),url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.svg#proxima-nova-regular") format("svg");font-weight:normal;font-style:normal}
+// @font-face{font-family:'proxima-nova-semi';src:url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.eot");src:url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.eot?#iefix") format("embedded-opentype"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.woff2") format("woff2"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.woff") format("woff"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.ttf") format("truetype"),url("https://assets.tradesy.com/css/fonts/proxima-nova/semi/webfont.svg#proxima-nova-semi") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'proxima-nova-regular';src:url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.eot");src:url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.eot?#iefix") format("embedded-opentype"),url("/css/fonts/proxima-nova/regular/webfont.woff2") format("woff2"),url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.woff") format("woff"),url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.ttf") format("truetype"),url("https://assets.tradesy.com/css/fonts/proxima-nova/regular/webfont.svg#proxima-nova-regular") format("svg");font-weight:normal;font-style:normal}
 
 /* latin-ext */
 // @font-face {
@@ -16,3 +16,12 @@
 //   src: local('Inconsolata'), url(http://fonts.gstatic.com/s/inconsolata/v10/BjAYBlHtW3CJxDcjzrnZCIgp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
 //   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 // }
+
+/* latin */
+@font-face {
+  font-family: 'Bangers';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bangers'), local('Bangers-Regular'), url(http://fonts.gstatic.com/s/bangers/v7/TgZv8lHkUbWVEqUOt_7mAALUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
